@@ -3,7 +3,9 @@ name = "my_project"
 version = "0.1.0"
 description = "Add a short description here"
 authors = []
-dependencies = []
+dependencies = [
+    "pydantic~=1.10.9",
+]
 requires-python = ">= 3.8"
 
 [build-system]

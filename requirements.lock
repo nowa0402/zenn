@@ -7,3 +7,5 @@
 #   all-features: false
 
 -e file:.
+pydantic==1.10.9
+typing-extensions==4.6.3
