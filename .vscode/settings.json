@@ -1,0 +1,25 @@
+{
+  // ルーラー
+  "editor.rulers": [80, 88],
+
+  // python path
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+  // black
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+
+  // mypy
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+
+  // Ruff:charliermarsh.ruff必須
+  "ruff.path": ["${workspaceFolder}/.venv/bin/ruff"],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      // isortの並び替えをRuffで実行
+      "source.organizeImports": true
+    }
+  }
+}
