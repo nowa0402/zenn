@@ -3,7 +3,12 @@ name = "my_project"
 version = "0.1.0"
 description = "Add a short description here"
 authors = []
-dependencies = []
+dependencies = [
+    "pydantic[dotenv]~=1.10.9",
+    "boto3~=1.26.153",
+    "fastapi~=0.98.0",
+    "uvicorn~=0.22.0",
+]
 requires-python = ">= 3.8"
 
 [build-system]
